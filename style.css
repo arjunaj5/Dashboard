@@ -1,0 +1,158 @@
+@import url("https//fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --primaryColor:#32CD32;
+    --offcanvas-width:310px;
+    --topNavBarHeight:91px;
+
+}
+ *{
+    font-weight: bold !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+    text-decoration: none;
+    font-family: "poppins",sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+/* side bar */
+.sidebar-nav{
+    width: var(--offcanvas-width);
+    background-color: var(--primaryColor);
+
+}
+.offcanvas-body ul li{
+   
+    background-color: var(--primaryColor);
+    border: 0;
+}
+
+.offcanvas-body ul li.active{
+    border-right: 5px solid white;
+    background-color: #79df79;
+
+}
+
+ /*-------------- TOP NAV----------------- */
+nav.navbar{
+    padding-bottom: 0;
+}
+nav.navbar ul li{
+    padding-bottom: .5625rem;
+    margin: 0 1em;
+}
+nav.navbar ul li.active{
+    border-bottom: 5px solid var(--primaryColor);
+}
+
+
+ /* -----------------MAIN PART----------------- */
+
+.main .btn.green{
+    background-color:var(--primaryColor)
+}
+
+
+.container,body{
+    background-color: #F4F6F4;
+}
+img:hover{
+    cursor: pointer;
+}
+.weeks button div.round{
+    display: inline-block;
+    margin: auto .5em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+}
+.weeks button.btn-outline-success div.round{
+    background-color:var(--primaryColor);
+}
+.accordion-button:not(.collapsed){
+    color: var(--primaryColor);
+}
+.accordion-button:not(.collapsed):after {
+    background-image: url(./icons/Polygondown.svg);
+   
+}
+.accordion-button:after{
+    
+    background-image: url(./icons/Polygondown.svg);
+}
+
+
+/* ------------------modal window ---------------*/
+.form-label{
+    font-size: .8rem;
+}
+.modal-dialog {
+    max-width: 800px;
+}
+.modal-footer button{
+    min-width: 200px;
+}
+button.modal-submit,button.modal-submit:hover{
+    background-color: var(--primaryColor);
+}
+
+/* -------------ACCORDION----------- */
+.icons-del-edit{
+    right: 3rem;
+    top: 45px;
+    z-index: 100; 
+}
+.icons-del-edit img{
+width: 1.2rem;
+aspect-ratio: 1/1;
+cursor: pointer;
+
+}
+.accordion-button.collapsed + div{
+   visibility: hidden;
+}
+.weeks button {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width:900px){
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+    }
+    .offcanvas-body ul li a{
+        padding-left: 5em !important;
+    }
+    /* Top Nav Bar */
+    .main {
+    margin-left: var(--offcanvas-width);
+    }
+    .container{
+        background-color: #F4F6F4;
+        padding:0 2em;
+    }
+    .container .input-group{
+        flex-basis: 30vw;
+    }
+    .weeks button{
+        padding-left: 0em !important;
+        width: 12em;
+        height: 4.5em;
+        margin-bottom: 0;
+    }
+    .input-group-text {
+        margin-left: auto;
+    }
+
+}
