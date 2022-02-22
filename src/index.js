@@ -62,8 +62,8 @@ function populateWithAccordion(name, start, end, noWeeks) {
 
             </button>
             <div class="position-absolute icons-del-edit">
-                <img class="mx-2" src="../src/media/icons/pencil.svg" alt="">
-                <img class="mx-2 " src="../src/media/icons/dustbin.svg" alt="">
+                <img class="mx-2" src="src/media/icons/pencil.svg" alt="">
+                <img class="mx-2 " src="src/media/icons/dustbin.svg" alt="">
             </div>
         </h2>
 
