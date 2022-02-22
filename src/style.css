@@ -83,12 +83,12 @@ img:hover{
     color: var(--primaryColor);
 }
 .accordion-button:not(.collapsed):after {
-    background-image: url(../src/media/icons/Polygondown.svg);
+    background-image: url(src/media/icons/Polygondown.svg);
    
 }
 .accordion-button:after{
     
-    background-image: url(../src/media/icons/Polygondown.svg);
+    background-image: url(src/media/icons/Polygondown.svg);
 }
 
 
